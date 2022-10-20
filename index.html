@@ -11,6 +11,10 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./style.css" />
     <title>Alurabooks</title>
   </head>
@@ -80,5 +84,61 @@
         class="banner_pesquisa"
       />
     </section>
+    <section class="carrossel">
+      <h2 class="carrossel__titulo">últimos lançamentos</h2>
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <img
+              src="./img/Javascript.svg"
+              alt="Livro sobre Javascript assertivo da alurabooks"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="./img/ApacheKafka.svg"
+              alt="Livro sobre kafka e spring boot da alurabooks"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="./img/Liderança.svg"
+              alt="Livro sobre Liderança e design da alurabooks"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="./img/Guia Front-end.svg"
+              alt="Livro Guia Front-end da alurabooks"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="./img/Portugol.svg"
+              alt="Livro sobre Portugol da alurabooks"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="./img/Acessibilidade.svg"
+              alt="Livro sobre acessibilidade web da alurabooks"
+            />
+          </div>
+        </div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./scripts/swiper.js"></script>
   </body>
 </html>

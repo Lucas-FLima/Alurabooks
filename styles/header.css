@@ -12,7 +12,7 @@
 }
 
 .container__botao {
-    display: none;
+  display: none;
 }
 
 .container__botao:checked ~ .lista-menu {
