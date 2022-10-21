@@ -11,7 +11,8 @@
   align-items: center;
 }
 
-.container__botao {
+.container__botao,
+.lista-menu {
   display: none;
 }
 
@@ -28,12 +29,7 @@
   display: inline-block;
 }
 
-.container__imagem {
-  padding: 1em;
-}
-
 .lista-menu {
-  display: none;
   position: absolute;
   top: 100%;
   width: 60vw;
@@ -48,6 +44,7 @@
 
 .lista-menu__link__titulo {
   color: var(--laranja);
+  font-weight: 700;
   text-decoration: none;
 }
 
@@ -57,4 +54,8 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+}
+
+.container__imagem {
+  padding: 1em;
 }
